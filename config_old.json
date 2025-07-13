@@ -1,6 +1,24 @@
 {
   "assemblies": [
     {
+      "name": "ecoli_k12",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "ecoli_k12-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "IndexedFastaAdapter",
+          "fastaLocation": {
+            "uri": "ecoli_k12.fasta",
+            "locationType": "UriLocation"
+          },
+          "faiLocation": {
+            "uri": "ecoli_k12.fasta.fai",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    },
+    {
       "name": "irgsp1gene",
       "sequence": {
         "type": "ReferenceSequenceTrack",
@@ -28,16 +46,16 @@
     {
       "type": "FeatureTrack",
       "trackId": "locus.sorted.gff",
-      "name": "rice annotations",
+      "name": "locus.sorted.gff",
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "locus.sorted.gff.gz",
+          "uri": "genome_data/irgsp1_gene_sequence/locus.sorted.gff.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "locus.sorted.gff.gz.tbi",
+            "uri": "genome_data/irgsp1_gene_sequence/locus.sorted.gff.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"

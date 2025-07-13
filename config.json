@@ -1,46 +1,47 @@
 {
   "assemblies": [
     {
-      "name": "ecoli_k12",
+      "name": "irgsp1",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "ecoli_k12-ReferenceSequenceTrack",
+        "trackId": "irgsp1-ReferenceSequenceTrack",
         "adapter": {
-          "type": "IndexedFastaAdapter",
+          "type": "BgzipFastaAdapter",
           "fastaLocation": {
-            "uri": "ecoli_k12.fasta",
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/irgsp1_new_renamed.fasta.gz",
             "locationType": "UriLocation"
           },
           "faiLocation": {
-            "uri": "ecoli_k12.fasta.fai",
-            "locationType": "UriLocation"
-          }
-        }
-      }
-    },
-    {
-      "name": "irgsp1gene",
-      "sequence": {
-        "type": "ReferenceSequenceTrack",
-        "trackId": "irgsp1gene-ReferenceSequenceTrack",
-        "adapter": {
-          "type": "IndexedFastaAdapter",
-          "fastaLocation": {
-            "uri": "irgsp1gene.fasta",
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/irgsp1_new_renamed.fasta.gz.fai",
             "locationType": "UriLocation"
           },
-          "faiLocation": {
-            "uri": "irgsp1gene.fasta.fai",
+          "gziLocation": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/irgsp1_new_renamed.fasta.gz.gzi",
             "locationType": "UriLocation"
           }
         }
       }
     }
   ],
-  "configuration": {},
-  "connections": [],
   "defaultSession": {
-    "name": "New Session"
+    "name": "Default Genome Session - irgsp1",
+    "margin": 0,
+    "views": [
+      {
+        "id": "linearGenomeView",
+        "minimized": false,
+        "type": "LinearGenomeView",
+        "init": {
+          "loc": "5:14,782,881..14,785,542",
+          "assembly": "irgsp1",
+          "tracks": [
+            "irgsp1-ReferenceSequenceTrack",
+            "zygote_rep3.24.bed",
+            "zygote_rep5.24.bed"
+          ]
+        }
+      }
+    ]
   },
   "tracks": [
     {
@@ -50,19 +51,85 @@
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "genome_data/irgsp1_gene_sequence/locus.sorted.gff.gz",
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/IRGSP-1.0_representative/locus.sorted.gff.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "genome_data/irgsp1_gene_sequence/locus.sorted.gff.gz.tbi",
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/IRGSP-1.0_representative/locus.sorted.gff.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "irgsp1gene"
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep3.24.bed",
+      "name": "zygote_rep3.24.bed",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/zygote_bed/zygote_rep3.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/zygote_bed/zygote_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep5.24.bed",
+      "name": "zygote_rep5.24.bed",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/zygote_bed/zygote_rep5.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/zygote_bed/zygote_rep5.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_rep6.24.bed",
+      "name": "zygote_rep6.24.bed",
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/zygote_bed/zygote_rep6.24.sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/zygote_bed/zygote_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
       ]
     }
   ]
