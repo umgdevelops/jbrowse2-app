@@ -38,10 +38,12 @@
           "assembly": "irgsp1",
           "tracks": [
             "irgsp1-ReferenceSequenceTrack",
-            "transcripts.sorted.gff",
-            "zygote_rep1.24",
-            "egg_rep1.24",
-            "fertilized_ovary_rep1.24"
+            "egg_merged_sorted",
+            "fertilized_ovary_merged_sorted",
+            "seedling_merged_sorted",
+            "sperm_merged_sorted",
+            "unfertilized_ovary_merged_sorted",
+            "zygote_merged_sorted"
           ]
         }
       }
@@ -61,6 +63,29 @@
         "index": {
           "location": {
             "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/IRGSP-1.0_representative/transcripts_renamed.sorted.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "egg_merged_sorted",
+      "name": "egg_merged_sorted",
+      "category": ["egg"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_merged_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
@@ -210,6 +235,29 @@
     },
     {
       "type": "FeatureTrack",
+      "trackId": "fertilized_ovary_merged_sorted",
+      "name": "fertilized_ovary_merged_sorted",
+      "category": ["fertilized ovary"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_merge_sort.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary/fertilized_ovary_merge_sort.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
       "trackId": "fertilized_ovary_rep1.24",
       "name": "fertilized_ovary_rep1.24",
       "category": ["fertilized ovary"],
@@ -268,6 +316,31 @@
         "index": {
           "location": {
             "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/fertilized_ovary_rep3.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+
+  
+    {
+      "type": "FeatureTrack",
+      "trackId": "seedling_merged_sorted",
+      "name": "seedling_merged_sorted",
+      "category": ["seedling"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_merged_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling/seedling_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
@@ -406,6 +479,31 @@
         "index": {
           "location": {
             "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/seedling_rep6.24.sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+
+
+    {
+      "type": "FeatureTrack",
+      "trackId": "sperm_merged_sorted",
+      "name": "sperm_merged_sorted",
+      "category": ["sperm"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_merged_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/sperm/sperm_merged_sorted.bed.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
@@ -599,6 +697,31 @@
         "irgsp1"
       ]
     },
+
+
+    {
+      "type": "FeatureTrack",
+      "trackId": "unfertilized_ovary_merged_sorted",
+      "name": "unfertilized_ovary_merged_sorted",
+      "category": ["unfertilized_ovary"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_merged_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/unfertilized_ovary/unfertilized_ovary_merged_sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
     {
       "type": "FeatureTrack",
       "trackId": "unfertilized_ovary_rep1",
@@ -667,6 +790,45 @@
       "assemblyNames": [
         "irgsp1"
       ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "zygote_merged_sorted",
+      "name": "zygote_merged_sorted",
+      "category": ["zygote"],
+      "adapter": {
+        "type": "BedTabixAdapter",
+        "bedGzLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_merged_sorted.bed.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_merged_sorted.bed.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "irgsp1"
+      ]
+    },
+    {
+      "trackId": "zygote-per-base-coverage",
+      "name": "Zygote Per-Base Coverage (Merged)",
+      "assemblyNames": ["irgsp1"],
+      "type": "QuantitativeTrack",
+      "autoscale":"local,clipped_global,global,z_score",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/zygote/zygote_per_base_coverage.bw"
+          }
+        },
+      "category": ["zygote"],
+      "defaultDisplay": true
+      
     },
     {
       "type": "FeatureTrack",
