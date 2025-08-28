@@ -73,6 +73,22 @@
       ]
     },
     {
+      "trackId": "egg-per-base-coverage",
+      "name": "Egg Per-Base Coverage (Merged)",
+      "assemblyNames": ["irgsp1"],
+      "type": "QuantitativeTrack",
+      "autoscale":"local,clipped_global,global,z_score",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://corsproxy.io/?url=https://github.com/umgdevelops/ou-jbrowse-genome-data/raw/refs/heads/main/irgsp1/tracks_sorted/egg/egg_cat.chr.sorted.bw"
+          }
+        },
+      "category": ["egg"],
+      "defaultDisplay": true
+      
+    },
+    {
       "type": "FeatureTrack",
       "trackId": "egg_merged_sorted",
       "name": "egg_merged_sorted",
